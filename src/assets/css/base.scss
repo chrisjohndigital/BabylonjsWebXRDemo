@@ -1,0 +1,22 @@
+@use 'sass:math';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {overflow:hidden}
+html, body, #app, .container {margin:0px; height:100%}
+
+.container {position:relative; width:100%}
+
+canvas {
+  width:100%;
+  margin:0px;  
+  height:auto; 
+  max-width:$appwidth; 
+  max-height:$appheight; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
